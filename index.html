@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="index.css" />
+  <title>INDIAN FLAG</title>
+</head>
+<body>
+  <audio autoplay="true" loop="true" src="./audio/music.mp3"></audio>
+  <div class="flag"><img src="./images/a3.png" /></div>
+  <svg>
+    <filter id="wavy">
+      <feTurbulence x="0" y="0" baseFrequency="0.01" numOctaves="5" seed="2">
+        <animate
+          attributeName="baseFrequency"
+          dur="60s"
+          values="0.1; 0.2;0.05;0.02"
+          repeatCount="indefinite"
+        ></animate>
+      </feTurbulence>
+      <fedisplacementMap in="SourceGraphic" scale="30"></fedisplacementMap>
+    </filter>
+  </svg>
+</body>
